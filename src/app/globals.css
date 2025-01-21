@@ -2,9 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, div, section, article, span, figure, figcaption, img, 
+h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, 
+small, strong, sub, sup, input, output, textarea, ol, ul, li, fieldset, 
+form, label, legend, tr, th, td, table, caption, footer, header, 
+hgroup, aside, menu, nav, time, mark, audio, video, 
+canvas, embed, iframe, object {
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    max-width: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+ol li, ul li {
+    margin: 5px 0 0 40px;
+}
+
+abbr {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.hidden {
+    display: none;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +58,4 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
